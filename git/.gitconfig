@@ -1,12 +1,12 @@
 [user]
-        name = Joshua Goodlett
-        email = joshuagoodlett@gmail.com
+    name = Joshua Goodlett
+    email = joshuagoodlett@gmail.com
 [github]
-        user = github_user_name
+    user = github_user_name
 [color]
-        status = auto
-        diff = auto
-        branch = auto
+    status = auto
+    diff = auto
+    branch = auto
 [alias]
 [core]
     legacyheaders = false
@@ -15,4 +15,4 @@
     editor = subl -n -w
     #pager = 'less -FRSX'
 [push]
-        default = simple
+    default = simple
