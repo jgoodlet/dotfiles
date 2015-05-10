@@ -37,6 +37,10 @@ brew cask install vlc
 brew tap caskroom/versions
 brew cask install sublime-text3
 
+# Extempore
+brew tap benswift/extempore
+brew install --with-stdlib extempore
+
 brew cask cleanup
 
 exit 0
