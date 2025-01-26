@@ -5,6 +5,6 @@
 **/.zsh_history
 
 # Zsh sessions
-.zsh_sessions
+**/.zsh_sessions
 
 **/.DS_Store
