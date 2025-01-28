@@ -38,11 +38,11 @@
 # live in `ZDOTDIR`, as it should. A small script that could be executed after running
 # `stow .`.
 
-# NOTE: This was moved to `etc/zshenv`
-# export ZDOTDIR="$HOME/.config/zsh"
+# -- DOTFILES dir --
+export DOTFILES_DIR=$HOME/.dotfiles
 
 # -- Starship Config --
-export STARSHIP_CONFIG=$ZSH/prompt/starship.toml
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 # -- XDG --
 export XDG_CACHE_HOME="$HOME/.cache"
