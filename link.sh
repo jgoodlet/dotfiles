@@ -27,6 +27,13 @@ done
 
 echo "Finished stowing all packages!"
 
+# The `zsh` configuration expects plugins to be installed in a dedicated
+# directory from which `.zshrc` will source them. If this directory does
+# not exist it needs to be created as it is referenced in other parts.
+if [ ! -d ${HOME}/.zsh_plugins ]; then
+    mkdir ${HOME}/.zsh_plugins
+fi
+
 # If there is currently no system `/etc/zshenv` then a symlink will be made
 # using this directory's `zshenv`. Otherwise, if there IS a system `zshenv`
 # then it's best to manually investigate and update it as permissions will
@@ -34,6 +41,5 @@ echo "Finished stowing all packages!"
 if [ ! -f /etc/zshenv ]; then
     sudo ln -sf $(pwd)/zshenv /etc/zshenv
 else
-    echo "/etc/zshenv already exists"
-    echo "Manually update to properly set ZDOTDIR"
+    echo "\n/etc/zshenv already exists ; check for ZDOTDIR"
 fi

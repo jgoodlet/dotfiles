@@ -185,8 +185,8 @@ symbol = " "
 
 [python]
 symbol = " "
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+# style = "bg:teal"
+# format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [rlang]
 symbol = "󰟔 "
