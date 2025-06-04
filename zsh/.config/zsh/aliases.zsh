@@ -4,9 +4,6 @@
 alias reload-zsh='source $ZDOTDIR/.zshrc'
 alias edit-zsh='nvim $ZDOTDIR/.zshrc'
 
-alias python='/usr/local/bin/python3'
-alias pip='/usr/local/bin/pip3'
-
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 
